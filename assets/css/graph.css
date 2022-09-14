@@ -31,10 +31,68 @@
 
 /* details dashboard bar graph end  */
 
+/*  dashboard Elements item start here */
+.mainDashboard {
+  padding-top: 100px;
+  margin-left: 20px;
+}
+
+.dashboardTitle h2 {
+  color: #444444;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.dashboardTitle p {
+  color: #444444;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.dashboardElements {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: space-around;
+  overflow-x: auto;
+  min-width: 205px;
+}
+
+.dashboardELementsItem {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  border: 1px solid #f0eaea;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  padding: 10px 20px;
+  border-radius: 6px;
+  gap: 15px;
+  min-width: 220px;
+  margin-bottom: 10px;
+}
+
+.elementItemText span {
+  color: #878787;
+  font-size: 14px;
+}
+
+.dashboardELementsItem img {
+  background: linear-gradient(270.67deg, #2cabef 0.49%, #0094ff 99.38%);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  padding: 12px 5px;
+}
+
+/*  dashboard Elements item start here */
+
+
 /* line graph start here  */
 .mainLineChart {
   background: white;
   padding-top: 40px;
+  margin: 10px;
 }
 .realTime {
   display: flex;
@@ -44,6 +102,26 @@
   font-weight: 500;
   color: #404040;
 }
+
+/* scrollbar edit for sidebar start */
+
+.dashboardElements::-webkit-scrollbar {
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(216, 210, 210);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* scrollbar edit for sidebar end  */
+
 
 /* line graph toogle  */
 .switch {
@@ -237,7 +315,39 @@ input:checked + .slider:before {
   padding: 30px;
   margin-bottom: 30px;
 }
+
 /* manager and garage end here  */
+
+/* times and permit start here  */
+.timesAndPermit {
+  display: flex;
+}
+.commonClassFormTimeAndPermit {
+  width: 50%;
+  margin: 10px;
+}
+.times,
+.permit {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.times .table tr {
+  border: transparent;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.permit .table tr {
+  border: transparent;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+/* times and permit ends here  */
 
 /* graph responsiveness here start */
 @media screen and (max-width: 980px) {
@@ -256,6 +366,14 @@ input:checked + .slider:before {
   .commonClassForManagerAndGarages {
     width: 97%;
   }
+
+  .timesAndPermit {
+    flex-direction: column;
+  }
+
+  .commonClassFormTimeAndPermit {
+    width: 97% !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .graphOptionItem {
@@ -270,3 +388,7 @@ input:checked + .slider:before {
 }
 
 /* graph responsiveness here end */
+
+
+
+  
