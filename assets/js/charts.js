@@ -187,3 +187,49 @@ let configLastWeekChart = new Chart(ctx, {
 });
 
 // main line chart end.
+
+
+// doughunut chart garages start 
+
+const dataDoughnut = {
+  labels: ["possitive", "negetive", "unsure"],
+  datasets: [
+    {
+      label: "# of Votes",
+      data: [60, 20, 6],
+      backgroundColor: ["#9791FF", "#FF5959", "lightgray"],
+      borderColor: ["#9791FF", "#FF5959", "lightgray"],
+      cutout: "70%",
+    },
+  ],
+};
+
+// config
+const doughnutConfig = {
+  type: "doughnut",
+  data: dataDoughnut,
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "left",
+        align: "center",
+        fontSize: "14",
+        labels: {
+          pointStyle: "circle",
+          usePointStyle: true,
+          padding: 14,
+        },
+      },
+    },
+  },
+};
+
+// data redering
+// const garagesDoughnut = new Chart(
+//   document.getElementById("garagesDoughnutChart"),
+//   doughnutConfig
+// );
+
+// doughnut chart gareges end 

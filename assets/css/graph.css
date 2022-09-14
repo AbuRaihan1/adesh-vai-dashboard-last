@@ -107,7 +107,6 @@ input:checked + .slider:before {
 
 /* line graph main ends here  */
 
-
 /* last week line chart start here  */
 .lastWeekAndAnswerTicket {
   display: flex;
@@ -139,8 +138,8 @@ input:checked + .slider:before {
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #7C828A;
-  font-family: 'Nunito Sans', sans-serif;
+  color: #7c828a;
+  font-family: "Nunito Sans", sans-serif;
 }
 .answerTicketTitle {
   font-family: "Poppins", sans-serif;
@@ -162,33 +161,98 @@ input:checked + .slider:before {
 }
 /* last week line chart end here  */
 
-
-
 /* manager and garage chart start here  */
+.managersAndGaraegs {
+  display: flex;
+}
+
+.commonClassForManagerAndGarages {
+  width: 50%;
+  margin: 10px;
+}
+
+.managers {
+  background: white;
+  padding: 30px;
+}
 
 
+
+.managerTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 20px ;
+}
+
+.managerTitle img {
+    background: #E4F6FF;
+    padding: 10px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-right: 8px;
+}
+
+.managerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-bottom: 24px;
+}
+
+.managerInfo p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #797979;
+    font-size: 15px;  
+}
+
+.managerInfoUser{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.managerInfoUser img{
+    width: 72px;
+    height: 62px;
+}
+
+.managerInfoUser div h5 {
+    font-weight: 500;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.managerInfoUser div span {
+    color: #797979;
+    font-weight: 400;
+    font-size: 15px;
+}
 /* manager and garage end here  */
 
 /* graph responsiveness here start */
 @media screen and (max-width: 992px) {
-    .lastWeekAndAnswerTicket {
-      flex-direction: column;
-    }
-  
-    .commonClassForLastWeek {
-      width: 97% !important;
-    }
+  .lastWeekAndAnswerTicket {
+    flex-direction: column;
   }
-  @media screen and (max-width: 600px) {
-    .graphOptionItem {
-      display: block;
-      margin-top: 10px !important;
-      text-align: right;
-    }
-    .graphOptionItem select {
-      margin: 5px 0;
-      width: 130px;
-    }
+
+  .commonClassForLastWeek {
+    width: 97% !important;
   }
-  
+}
+@media screen and (max-width: 600px) {
+  .graphOptionItem {
+    display: block;
+    margin-top: 10px !important;
+    text-align: right;
+  }
+  .graphOptionItem select {
+    margin: 5px 0;
+    width: 130px;
+  }
+}
+
 /* graph responsiveness here end */
