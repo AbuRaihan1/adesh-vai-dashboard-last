@@ -1,0 +1,44 @@
+/* graph start  */
+.lastWeekGraph {
+  margin: 20px 0;
+}
+.graphOptionItem {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.graphOptionItem select {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.graphOptionItem select:hover{
+    background: #e7e4e4;
+}
+
+.setGraph {
+  display: flex;
+}
+
+/* graph end  */
+
+@media screen and (max-width: 600px) {
+  .graphOptionItem {
+    display: block;
+    margin-top: 10px !important;
+    text-align: right;
+  }
+  .graphOptionItem select {
+    margin: 5px 0;
+    width:130px;
+  }
+
+}
