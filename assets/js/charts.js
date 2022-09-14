@@ -192,14 +192,14 @@ let configLastWeekChart = new Chart(ctx, {
 // doughunut chart garages start 
 
 const dataDoughnut = {
-  labels: ["possitive", "negetive", "unsure"],
+  labels: ["Garage one", "negetive", "unsure"],
   datasets: [
     {
       label: "# of Votes",
       data: [60, 20, 6],
-      backgroundColor: ["#9791FF", "#FF5959", "lightgray"],
-      borderColor: ["#9791FF", "#FF5959", "lightgray"],
-      cutout: "70%",
+      backgroundColor: ["#147AD6", "#79D2DE", "#EC6666"],
+      borderColor: ["#147AD6", "#79D2DE", "#EC6666"],
+      cutout: "60%",
     },
   ],
 };
@@ -213,9 +213,9 @@ const doughnutConfig = {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: "left",
-        align: "center",
-        fontSize: "14",
+        position: "bottom",
+        align: "left",
+        fontSize: "16",
         labels: {
           pointStyle: "circle",
           usePointStyle: true,
@@ -227,9 +227,9 @@ const doughnutConfig = {
 };
 
 // data redering
-// const garagesDoughnut = new Chart(
-//   document.getElementById("garagesDoughnutChart"),
-//   doughnutConfig
-// );
+const garagesDoughnut = new Chart(
+  document.getElementById("garagesDoughnutChart"),
+  doughnutConfig
+);
 
 // doughnut chart gareges end 
