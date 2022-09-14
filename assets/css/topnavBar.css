@@ -5,6 +5,7 @@
   width: 77.7%;
   position: fixed;
   border-bottom: 1px solid rgb(235, 229, 229);
+  z-index: 1;
 }
 
 .headerItem {
@@ -84,7 +85,7 @@
   margin-top: 50px;
   justify-content: space-around;
   overflow-x: auto;
-  min-width:205px ;
+  min-width: 205px;
 }
 
 .dashboardELementsItem {
@@ -96,9 +97,8 @@
   padding: 10px 20px;
   border-radius: 6px;
   gap: 15px;
-  min-width:220px ;
+  min-width: 220px;
   margin-bottom: 10px;
-
 }
 
 .elementItemText span {
@@ -114,30 +114,23 @@
   padding: 12px 5px;
 }
 
-
-
 /* mani dashboard end  */
-
-
-
-
-
 
 /* scrollbar edit for sidebar start */
 /* width */
 .dashboardElements::-webkit-scrollbar {
-    height: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(216, 210, 210);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* scrollbar edit for sidebar end  */
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 210, 210);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scrollbar edit for sidebar end  */
