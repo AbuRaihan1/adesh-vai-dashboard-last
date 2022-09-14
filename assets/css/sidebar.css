@@ -104,7 +104,7 @@ label #close {
   color: rgb(255, 255, 255);
   position: fixed;
   /* left:190px; */
-  left:10px;
+  left: 10px;
   font-size: 22px;
 }
 
@@ -134,8 +134,8 @@ label #close {
 .sidebarLogoArea {
   margin: 54px 0px 43px;
   position: fixed;
-  background:white;
-  width:299px;
+  background: white;
+  width: 299px;
   margin-top: 0px;
 }
 
@@ -161,11 +161,11 @@ label #close {
   padding-right: 0px !important;
 }
 
-.listItem {
+/* .listItem {
 }
 
 .searchForm {
-}
+} */
 
 .formGropu {
   position: relative;
@@ -183,8 +183,8 @@ label #close {
   padding-left: 18px;
 }
 
-.listItem .navLink .navIcon {
-}
+/* .listItem .navLink .navIcon {
+} */
 
 .listItem .navLink .navName {
   font-family: "Poppins";
@@ -236,8 +236,8 @@ label #close {
   color: #fff !important;
 }
 
-.userName {
-}
+/* .userName {
+} */
 
 .userName .userFullName {
   font-family: "Poppins";
@@ -342,7 +342,4 @@ label #close {
     top: 20px;
   }
 
-  .main_body {
-    /* margin-top: 50px; */
-  }
 }
