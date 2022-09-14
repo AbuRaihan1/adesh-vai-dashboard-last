@@ -1,7 +1,10 @@
 /* details dashboard bar graph start  */
 
 .mainGraphDashboard {
-  margin: 20px 0;
+  margin: 20px 10px;
+  background: white;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 .graphOptionItem {
   display: flex;
@@ -87,7 +90,6 @@
 
 /*  dashboard Elements item start here */
 
-
 /* line graph start here  */
 .mainLineChart {
   background: white;
@@ -106,22 +108,21 @@
 /* scrollbar edit for sidebar start */
 
 .dashboardElements::-webkit-scrollbar {
-    height: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(216, 210, 210);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* scrollbar edit for sidebar end  */
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 210, 210);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scrollbar edit for sidebar end  */
 
 /* line graph toogle  */
 .switch {
@@ -271,6 +272,16 @@ input:checked + .slider:before {
   margin-right: 8px;
 }
 
+.managerTitle i {
+  background: #e4f6ff;
+  padding: 10px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-right: 8px;
+  color: #2694e2;
+}
+
 .managerInfo {
   display: flex;
   align-items: center;
@@ -316,6 +327,37 @@ input:checked + .slider:before {
   margin-bottom: 30px;
 }
 
+.wrapAllPercentageChart {
+  position: relative;
+}
+
+.lightskyPercentage,
+.redPercentage,
+.bluePercentage {
+  background: white !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 68%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.redPercentage {
+  right: 65%;
+  margin-top: 25px;
+}
+
+.bluePercentage {
+  right: 15%;
+  margin-top: 110px;
+}
 /* manager and garage end here  */
 
 /* times and permit start here  */
@@ -350,7 +392,19 @@ input:checked + .slider:before {
 /* times and permit ends here  */
 
 /* graph responsiveness here start */
-@media screen and (max-width: 980px) {
+
+@media screen and (max-width: 1300px) {
+  .lightskyPercentage {
+    right: 65%;
+  }
+
+  .bluePercentage {
+    right: 18%;
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .lastWeekAndAnswerTicket {
     flex-direction: column;
   }
@@ -374,7 +428,48 @@ input:checked + .slider:before {
   .commonClassFormTimeAndPermit {
     width: 97% !important;
   }
+
+  .lightskyPercentage {
+    right: 58%;
+  }
+
+  .redPercentage {
+    right: 58%;
+    margin-top: 13px;
+  }
+
+  .bluePercentage {
+    right: 32%;
+    margin-top: 110px;
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .lightskyPercentage {
+    right: 60%;
+  }
+
+  .bluePercentage {
+    right: 28%;
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lightskyPercentage {
+    right: 62%;
+  }
+
+  .redPercentage {
+    right: 60%;
+    margin-top: 20px;
+  }
+
+  .bluePercentage {
+    right: 24%;
+    margin-top: 110px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .graphOptionItem {
     display: block;
@@ -385,10 +480,40 @@ input:checked + .slider:before {
     margin: 5px 0;
     width: 130px;
   }
+
+  .lightskyPercentage {
+    right: 72%;
+    margin-top: 180px;
+  }
+
+  .bluePercentage {
+    right: 18%;
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bluePercentage {
+    right: 12%;
+    margin-top: 110px;
+  }
+
+  .redPercentage {
+    right: 65%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .redPercentage {
+    right: 73%;
+    margin-top: 45px;
+  }
+
+  .bluePercentage {
+    right: 8%;
+    margin-top: 110px;
+  }
 }
 
 /* graph responsiveness here end */
-
-
-
-  

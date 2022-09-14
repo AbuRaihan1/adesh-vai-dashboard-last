@@ -28,6 +28,9 @@
 
     <!-- chart js  -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- chart js show ChartDataLabels cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
 
 <body>
@@ -284,8 +287,24 @@
                </div>
             </div>
             <div class="garages commonClassForManagerAndGarages">
-                <h4 class="managerTitle"> <img src="assets/images/garages.svg" alt=""> Manegers</h4>
+                <h4 class="managerTitle"> <img src="assets/images/garages.svg" alt=""> Garages</h4>
+                <!-- doughnut chart parcentage start-->
+                <div class="wrapAllPercentageChart">
+                    <div class="lightskyPercentage">
+                        30%
+                    </div>
+
+                    <div class="redPercentage">
+                        26%
+                    </div>
+
+                    <div class="bluePercentage">
+                        54%
+                    </div>
+                </div>
+                <!-- doughnut chart parcentage end  -->
                <div class="doughnutChartWrapper">
+                 
                 <canvas id="garagesDoughnutChart"></canvas>
                </div>
             </div>
@@ -294,7 +313,7 @@
 
           <section class="timesAndPermit">
             <div class="times commonClassFormTimeAndPermit">
-                <h4 class="managerTitle"> <img src="assets/images/garages.svg" alt=""> Time(s)</h4>
+                <h4 class="managerTitle"> <i class="far fa-clock"></i> Time(s):</h4>
                 <table class="table">    
                     <tbody>
                       <tr>
