@@ -1,5 +1,17 @@
-// bar chart start
+const plugin = {
+  id: 'custom_canvas_background_color',
+  beforeDraw: (chart) => {
+    const {ctx} = chart;
+    ctx.save();
+    ctx.globalCompositeOperation = 'destination-over';
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, chart.width, chart.height);
+    ctx.restore();
+  }
+};
 
+
+// bar chart start
 // setup block
 const data = {
   labels: [
@@ -66,12 +78,13 @@ const config = {
 
 // render block
 const lasWeekChart = new Chart(document.getElementById("myChart"), config);
-
 // bar chart end
 
-// welcome dashboard file start
-// line chart
 
+// welcome dashboard file start
+
+
+// main line chart start
 var ctx = document.getElementById("lineChartMain").getContext("2d");
 var gradient = ctx.createLinearGradient(0, 0, 0, 300);
 gradient.addColorStop(0, "#147AD6");
@@ -88,15 +101,15 @@ const dataLineChart = {
       borderWidth: 2,
       tension: 0.5,
       fill: true,
-
     },
   ],
 };
 
-// // config block
+// config block
 let configLineChart = new Chart(ctx, {
   type: "line",
   data: dataLineChart,
+  plugins: [plugin],
   options: {
     // responsive: false,
     plugins: {
@@ -120,38 +133,57 @@ let configLineChart = new Chart(ctx, {
   },
 });
 
-// const lineChartMain = new Chart(
-//   document.getElementById("lineChartMain"),
-//   configLineChart
-// );
+// main line chart end.
 
-// const vissionDoughnut = new Chart(
-//   document.getElementById("lineChartMain"),
-//   configLineChart
-// );
-// let gradientBg = ctx.createLinearGradient(0,0,0,200);
-// gradientBg.addColorStop(1, 'rgba(255,99,132,1');
 
-var ctx = document.getElementById("lineChartMain").getContext("2d");
 
-var myChart = new Chart(ctx, {
+// lastweek line chart start
+var ctx = document.getElementById("lastWeekChart").getContext("2d");
+var gradient = ctx.createLinearGradient(0, 0, 0, 300);
+gradient.addColorStop(0, "#147AD6");
+gradient.addColorStop(1, "#FFFFFF");
+const dataLastWeekChart = {
+  labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN"],
+  datasets: [
+    {
+      label: "# of Votes",
+      data: [300, 500, 240, 620, 255, 252, 5],
+      backgroundColor: gradient,
+      pointRadius: 7,
+      borderColor: "#147AD6",
+      borderWidth: 2,
+      tension: 0.5,
+      fill: false,
+    },
+  ],
+};
+
+// config block
+let configLastWeekChart = new Chart(ctx, {
   type: "line",
-  data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [
-      {
-        backgroundColor: gradient,
-        label: "Numbers",
-        data: [12, 19, 3, 5, 2, 3],
-      },
-    ],
-  },
+  data: dataLastWeekChart,
+  plugins: [plugin],
   options: {
-    scales: {
-      y: {
-        beginAtZero: true,
+    // responsive: false,
+    plugins: {
+      legend: {
+        display: false,
       },
     },
-    tension: 0.3,
+    scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        beginAtZero: true,
+        grid: {
+          display: false,
+        },
+      },
+    },
   },
 });
+
+// main line chart end.

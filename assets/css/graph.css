@@ -1,5 +1,6 @@
-/* graph start  */
-.lastWeekGraph {
+/* details dashboard bar graph start  */
+
+.mainGraphDashboard {
   margin: 20px 0;
 }
 .graphOptionItem {
@@ -28,22 +29,13 @@
   display: flex;
 }
 
-/* graph end  */
-
-@media screen and (max-width: 600px) {
-  .graphOptionItem {
-    display: block;
-    margin-top: 10px !important;
-    text-align: right;
-  }
-  .graphOptionItem select {
-    margin: 5px 0;
-    width: 130px;
-  }
-}
+/* details dashboard bar graph end  */
 
 /* line graph start here  */
-
+.mainLineChart {
+  background: white;
+  padding-top: 40px;
+}
 .realTime {
   display: flex;
   justify-content: flex-end;
@@ -61,14 +53,12 @@
   height: 20px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -107,7 +97,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -115,3 +104,91 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* line graph main ends here  */
+
+
+/* last week line chart start here  */
+.lastWeekAndAnswerTicket {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.commonClassForLastWeek {
+  width: 50%;
+  margin: 10px;
+}
+.answerTickets {
+  background: white;
+  padding: 10px;
+}
+
+.lastWeekChart {
+  background: white;
+  padding: 10px;
+}
+.lastWeekChart h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+.lastWeekChart span {
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #7C828A;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.answerTicketTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+.answerTickets .table {
+  background: white;
+}
+
+.answerTickets .table tr {
+  border: transparent;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+/* last week line chart end here  */
+
+
+
+/* manager and garage chart start here  */
+
+
+/* manager and garage end here  */
+
+/* graph responsiveness here start */
+@media screen and (max-width: 992px) {
+    .lastWeekAndAnswerTicket {
+      flex-direction: column;
+    }
+  
+    .commonClassForLastWeek {
+      width: 97% !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .graphOptionItem {
+      display: block;
+      margin-top: 10px !important;
+      text-align: right;
+    }
+    .graphOptionItem select {
+      margin: 5px 0;
+      width: 130px;
+    }
+  }
+  
+/* graph responsiveness here end */
