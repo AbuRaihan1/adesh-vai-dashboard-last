@@ -22,11 +22,16 @@
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-weight: 400;
+  font-size: 14px;
+  color:#000000;
+  font-family: "Poppins", sans-serif;
 }
 
 .graphOptionItem select:hover {
   background: #e7e4e4;
 }
+
 
 .setGraph {
   display: flex;
@@ -51,6 +56,8 @@
   color: #444444;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  margin-top: 5px;
 }
 
 .dashboardElements {
@@ -64,7 +71,7 @@
 
 .dashboardELementsItem {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: white;
   border: 1px solid #f0eaea;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
@@ -77,7 +84,13 @@
 
 .elementItemText span {
   color: #878787;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.elementItemText h3 {
+  font-weight: 600;
+  font-size: 21px;
 }
 
 .dashboardELementsItem img {
@@ -233,10 +246,16 @@ input:checked + .slider:before {
 
 .answerTickets .table tr {
   border: transparent;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
+  color: #000000;
+}
+
+.answerTickets .table tbody tr td strong {
+  font-weight: bold;
 }
 /* last week line chart end here  */
 
@@ -258,9 +277,10 @@ input:checked + .slider:before {
 
 .managerTitle {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: black;
+  color: #000000;
   padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .managerTitle img {
@@ -269,7 +289,7 @@ input:checked + .slider:before {
   border-radius: 50%;
   height: 45px;
   width: 45px;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 
 .managerTitle i {
@@ -278,8 +298,8 @@ input:checked + .slider:before {
   border-radius: 50%;
   height: 45px;
   width: 45px;
-  margin-right: 8px;
-  color: #2694e2;
+  margin-right: 15px;
+  color: #49c0ff;
 }
 
 .managerInfo {
@@ -376,18 +396,38 @@ input:checked + .slider:before {
 }
 .times .table tr {
   border: transparent;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
+  color: #000000;
+}
+
+.times .table tr td {
+  color: #797979;
+}
+
+.times .table tr td strong {
+  color: #444444;
 }
 
 .permit .table tr {
   border: transparent;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
+  color: #000000;
+  font-size: 16px;
+}
+
+.permit .table tr td {
+  color: #797979;
+}
+
+.permit .table tr td strong {
+  color: #444444;
 }
 /* times and permit ends here  */
 

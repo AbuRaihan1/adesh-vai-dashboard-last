@@ -190,12 +190,13 @@ label #close {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #000000;
   margin-left: 10px;
   padding: 10px 0px;
+  padding-left: 20px;
 }
 
 .hoverIcon {
